@@ -1,0 +1,576 @@
+* {
+  margin: 0px;
+  background-color: #191d28;
+  padding: 0px;
+}
+
+.page {
+  color: white;
+  padding-bottom: 47px;
+  width: 100%;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -15px;
+  padding: 20px 30px 0px;
+}
+
+.headStart img {
+  width: 18rem;
+  height: 3rem;
+  margin: 2rem;
+}
+
+.headMiddle {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: white;
+  margin: 10px;
+}
+
+.btnMiddle button {
+  color: white;
+  padding: 10px 40px;
+  /* height: 6vh; */
+  width: 4.9vw;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: bold;
+  border: 1px solid #4e555b;
+  border-radius: 10px;
+  background-color: #2e3241;
+}
+
+.btnMiddle .btn {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px 40px;
+}
+.btnMiddle button span {
+  display: flex;
+  background-color: #2e3241;
+}
+
+.btnMiddle button select {
+  border: none;
+  outline: none;
+  background-color: #2e3241;
+  color: white;
+  font-weight: bold;
+  font-size: 0.9rem;
+  width: 52px;
+}
+
+.btnMiddle button select option {
+  background-color: white;
+  color: black;
+}
+
+.headEnd {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 2rem;
+}
+
+.teleImg {
+  background-color: #3dc6c1;
+}
+
+.teleImg img {
+  height: 15px;
+  background-color: #3dc6c1;
+}
+
+.telegram {
+  font-size: 2rem;
+  margin: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: white;
+  border: 1px solid #4e555b;
+  border-radius: 10px;
+  background-color: #3dc6c1;
+}
+
+.telegram div {
+  background-color: #3dc6c1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.telegram button {
+  background-color: #3dc6c1;
+  font-weight: bold;
+  color: white;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 2px 20px;
+}
+
+#countdown {
+  position: relative;
+  margin: auto;
+  color: white;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+}
+
+#countdown-number {
+  color: #3dc6c1;
+  display: inline-block;
+  line-height: 40px;
+  z-index: -1;
+}
+
+svg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  color: white;
+  transform: rotateY(-180deg) rotateZ(-90deg);
+}
+
+svg circle {
+  stroke-dasharray: 113px;
+  stroke-dashoffset: 0px;
+  stroke-linecap: round;
+  stroke-width: 2px;
+  stroke: #3dc6c1;
+  fill: none;
+  animation: countdown 60s linear infinite forwards;
+}
+
+@keyframes countdown {
+  from {
+    stroke-dashoffset: 0px;
+  }
+  to {
+    stroke-dashoffset: 113px;
+  }
+}
+
+.toggle {
+  position: relative;
+  display: inline-block;
+  width: 65px;
+  height: 35px;
+  border-radius: 30px;
+  background-color: #2e3241;
+  border: 2px solid #4e555b;
+}
+
+.toggle:after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #3dc6c1;
+  top: 2px;
+  left: 1px;
+  transition: all 0.5s;
+}
+
+.checkbox:checked + .toggle::after {
+  left: 33px;
+}
+
+.checkbox {
+  display: none;
+}
+
+/*  Here code for second section     */
+
+.second {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: -10px;
+  font-family: Oswald, sans-serif;
+  margin-bottom: 35px;
+  padding: 0px 30px;
+}
+
+.second div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.second div h1 {
+  font-size: 40px;
+  font-weight: 400;
+  color: #5dc7c2;
+  margin: 8px;
+}
+
+.second div p{
+  color: #fff;
+  opacity: 0.45;
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.second .bestPrice{
+    display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+}
+
+.second .bestPrice h4{
+    color: #fff;
+    font-size: 28px;
+    opacity: 0.45;
+    font-weight: 300;
+    letter-spacing: 0.75px;
+    text-align: center;
+    margin-bottom: 15px;
+    font-family: Oswald, sans-serif;
+}
+
+.second .bestPrice h1{
+    font-size: 80px;
+     font-weight: 400;
+     color: white;
+
+}
+
+.second .bestPrice h3{
+    color: #fff;
+    width: 25vw;
+    font-size: 16px;
+    opacity: 0.45;
+    font-weight: 300;
+    letter-spacing: 0.75px;
+    text-align: center;
+    margin-top: 22px;
+    font-family: Oswald, sans-serif;
+    line-height: 1.5;
+    box-sizing: border-box;
+}
+
+
+
+/* Here code for table  */
+
+.table{
+  min-width: 100vw;
+}
+
+.table thead tr th {
+  color: #fff;
+  padding: 0 12px;
+  font-weight: 500;
+  line-height: 1.2;
+  border-collapse: separate;
+  border-spacing: 0 1em;
+  opacity: 0.45;
+  font-family: Oswald;
+  font-size: 24px;
+  letter-spacing: 1px;
+}
+
+.table tbody tr td {
+  /* padding: 0.75rem; */
+  color: #fff;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #2e3241;
+}
+
+.table tbody tr td h4 {
+  /* font-family: Oswald; */
+  font-size: 24px;
+  margin: 0;
+  opacity: 1;
+  background-color: #2e3241;
+  text-align: center;
+  font-weight: 400;
+  /* padding:6px 30px; */
+}
+
+.footer {
+  padding: 20px 0px;
+}
+
+.footer div {
+  /* display: flex; */
+  /* justify-content:space-between; */
+  /* align-items: center; */
+  /* flex-direction: row; */
+  color: white;
+  font-family: Oswald, sans-serif;
+}
+
+.app{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px #191d28;
+  background-color: #191d28;
+  position: fixed;
+  left: 0;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  bottom: 0;
+  z-index: 8;
+}
+
+.app button{
+  
+  color: #17a2b8;
+    border-color: #17a2b8;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid #17a2b8;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+}
+
+
+@media screen and (max-width: 1080px) {
+  .headEnd {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .headMiddle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 25px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .headMiddle {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .btnMiddle button,
+  .btnMiddle .btn {
+    font-size: 14px;
+    padding: 10px 30px;
+  }
+
+  .btnMiddle button select,
+  .btnMiddle .btn {
+    width: 40px;
+    font-size: 10px;
+  }
+
+  .telegram button {
+    padding: 3px 10px;
+  }
+
+  .second .bestPrice h1{
+     font-size: 60px;
+  }
+
+  .second .bestPrice h4{
+    font-size: 22px;
+    font-weight: 300;
+  }
+
+  .second .bestPrice h3{
+    font-size: 12px;
+    font-weight: 300;
+  }
+
+  .second div h1 {
+    font-size: 30px;
+  }
+
+  .headStart img {
+    width: 95%;
+  }
+
+}
+
+
+
+@media screen and (max-width: 910px) {
+
+.table{
+  min-width: 100vw;
+  display: block;
+  overflow: auto;
+  /* width: 100%; */
+}
+
+}
+
+@media screen and (max-width: 850px) {
+  .table{
+    min-width: 100vw;
+    overflow-x: scroll;
+    white-space: nowrap;
+
+  }
+}
+
+
+
+@media screen and (max-width: 768px) {
+.head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  margin: 0%;
+}
+
+.headStart{
+  width: 70%;
+  height: auto;
+}
+
+.headStart img{
+  /* width: 85%; */
+  width: 80%;
+  height:0px auto;
+  margin: 0%;
+  margin-top: 15px;
+
+}
+
+.headMiddle{
+  margin: 0px;
+
+}
+
+.headEnd{
+  margin: 0%;
+  margin-bottom: 10px;
+  padding: 0px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8px;
+
+}
+
+.telegram {
+  /* margin: 25px; */
+  text-align: center;
+   margin: 0px;
+   margin: 0px 10px;
+   /* margin-bottom: 20px; */
+}
+
+.telegram button{
+    padding: 1px 0px;
+}
+
+.telegram button div{
+  padding: 0px 0px;
+  font-size: 0.8rem;
+}
+
+.second .bestPrice{
+  padding-bottom: 15px;
+}
+
+.second  .bestPrice h4{
+  margin-top: 10px;
+  font-weight: 300;
+  font-size: 13px;
+  margin-bottom: 5px;
+  white-space: nowrap;
+}
+
+.second .bestPrice h1{
+  padding-bottom: 10px;
+  font-weight: 400;
+  font-size: 23px;
+}
+
+.second .bestPrice h3{
+  font-weight: 300;
+  font-size: 8px;
+  margin-top: -6px;
+}
+
+.second div h1 {
+  font-weight: 400;
+  font-size: 14px;
+  white-space: nowrap;}
+
+  .second div p {
+    font-size: 10px;
+    font-weight: 300;
+    white-space: nowrap;
+  }
+
+}
+
+@media screen and (max-width: 576px){
+
+  .headStart{
+   width: 100%;
+  }
+
+  .second{
+    margin-bottom: 0px;
+  }
+
+  .second .bestPrice{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+  }
+
+  .second .bestPrice h4{
+    margin-top: 15px;
+  }
+
+  .second .bestPrice h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+}
+
+
